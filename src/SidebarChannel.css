@@ -1,0 +1,16 @@
+.sidebarChannel > span:hover {
+  color: white;
+}
+
+.sidebarChannel > span {
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebarChannel__hash {
+  font-size: 30px;
+  padding: 8px;
+}

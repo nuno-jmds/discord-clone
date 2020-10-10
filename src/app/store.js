@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "../features/userSlice";
+import appReducer from "../features/appSlice";
 
+//This store is the outbound layer. We configure the layer here
 export default configureStore({
+  //the reducer is the listener
   reducer: {
-    counter: counterReducer,
+    user: userReducer,
+    app: appReducer,
   },
 });
