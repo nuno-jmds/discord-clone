@@ -10,7 +10,7 @@ import { auth } from "./firebase";
 function App() {
   //Spetial Hook
   const user = useSelector(selectuser);
-  const dispatch = useDispatch(selectuser);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
